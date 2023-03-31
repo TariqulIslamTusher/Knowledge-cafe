@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const CardBody = (props) => {
+    const [bookmark, setBookmark] = useState([])
+    useEffect( () => {
+        
+    },[])
     const { user_image, id, published_date, person, description } = props.data
     return (
         <div>
@@ -25,7 +29,7 @@ const CardBody = (props) => {
 
                 <div className="card-actions">
                     <h1 className='font-bold text-5xl'>{description}</h1>
-                    <a className='text-blue-700 text-lg cursor-pointeractive:text-red-900'>Mark as read</a>
+                    <a className='text-blue-700 text-lg cursor-pointer active:text-red-900'>Mark as read</a>
                 </div>
             </div>
         </div>
