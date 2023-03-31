@@ -16,10 +16,8 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <div>
-        <Container datas={datas} key={datas.map(data => data.id)}></Container>
-        <Bookmark></Bookmark>
-      </div>
+      <Container className='grid-cols-9' datas={datas} key={datas.map(data => data.id)}></Container>
+      
     </div>
   )
 }
