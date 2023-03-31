@@ -12,20 +12,25 @@ function App() {
       .then(data => setData(data))
     }, [])
 
-    const handleBookmark =(id) =>{
-      const min = JSON.parse(localStorage.getItem('ReadMin'))
-      if (min){
-        const sum = min + id
+    const [watchTime, setWatchTime] = useState('00')
+
+    const handleWatchTime =(id) =>{
+      const time = JSON.parse(localStorage.getItem('ReadMin'))
+      if (time){
+        const sum = time + id
         localStorage.setItem('ReadMin', sum)
+        setWatchTime(sum)
       } else{
         localStorage.setItem('ReadMin', id)
+        setWatchTime(id)
       }
     }
+    console.log(watchTime)
 
   return (
     <div className="App">
       <Header></Header>
-      <Container className='grid-cols-9' handleBookmark={handleBookmark} datas={datas} key={datas.map(data => data.id)}></Container>
+      <Container className='grid-cols-9' handleWatchTime={handleWatchTime} watchTime={watchTime} datas={datas} key={datas.map(data => data.id)}></Container>
 
     </div>
   )
