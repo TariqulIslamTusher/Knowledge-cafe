@@ -2,10 +2,10 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div>
-            <div className="navbar bg-base-100">
+        <div className='shadow-xl my-2'>
+            <div className="navbar bg-base-100 container mx-auto">
                 <div className="flex-1">
-                    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                    <a className="btn btn-ghost normal-case text-4xl">Knowledge Cafe</a>
                 </div>
 
                 <div className="flex-none">

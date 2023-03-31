@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "person": "John Doe",
+        "author": "Jane Smith",
+        "published_date": "2022-01-01",
+        "title": "Coding Related",
+        "description": "A programmer working on a computer",
+        "cover_image": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "user_image": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id": 2,
+        "person": "Alice Johnson",
+        "author": "Bob Brown",
+        "published_date": "2022-02-15",
+        "title": "Programming Languages",
+        "description": "A group of people discussing coding languages",
+        "cover_image": "https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "user_image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id": 3,
+        "person": "David Lee",
+        "author": "Emily Wong",
+        "published_date": "2022-03-10",
+        "title": "Code Debugging",
+        "description": "A person debugging code on a computer screen",
+        "cover_image": "https://media.istockphoto.com/id/1427762503/photo/3d-illustration-of-cyber-robot-human-on-technology-background.jpg?b=1&s=170667a&w=0&k=20&c=jZv09ykXU04UhzkxxpIGS2njcuwlExGEN-X4ZVnUq5M=",
+        "user_image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id": 4,
+        "person": "Sarah Kim",
+        "author": "Tom Jackson",
+        "published_date": "2022-04-20",
+        "title": "Web Development",
+        "description": "A person working on web development",
+        "cover_image": "https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "user_image": "https://unsplash.com/photos/Zji-UJdMkII"
+    },
+    {
+        "id": 5,
+        "person": "Peter Wong",
+        "author": "Olivia Davis",
+        "published_date": "2022-05-12",
+        "title": "Artificial Intelligence",
+        "description": "A person working on artificial intelligence",
+        "cover_image": "https://images.unsplash.com/photo-1592609931095-54a2168ae893?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGRldmVsb3BlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "user_image": "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id": 6,
+        "person": "Lisa Chen",
+        "author": "Mike Wilson",
+        "published_date": "2022-06-30",
+        "title": "Coding Community",
+        "description": "A group of people working together on a coding project",
+        "cover_image": "https://images.unsplash.com/photo-1623479322729-28b25c16b011?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fGRldmVsb3BlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "user_image": "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    }
+]
