@@ -3,13 +3,14 @@ import Card from '../Card/Card';
 import Bookmark from '../Bookmark/Bookmark';
 
 const Container = (props) => {
-    
-    const [cart, setCart] = useState([])
 
-    const handleBlog =(data) =>{
-        cart.push(data)
-        setCart(cart)
+    const [cart, setCart] = useState([])
+    
+    const handleBlog =(data)=>{
+        const newCart = [...cart, data]
+        setCart(newCart)
     }
+    // console.log(cart)
 
     return (
         <div className='container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 md:px-32'>
@@ -19,7 +20,7 @@ const Container = (props) => {
                     props.datas.map(data => {
                         return (
                             <div>
-                                <Card data={data} handleWatchTime={props.handleWatchTime} handleBlog={handleBlog}></Card>
+                                <Card data={data} handleBlog={handleBlog} handleWatchTime={props.handleWatchTime}></Card>
                             </div>
                         )
                     })
