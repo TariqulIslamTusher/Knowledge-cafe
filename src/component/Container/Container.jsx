@@ -13,7 +13,7 @@ const Container = (props) => {
         const toastCondition = cart.includes(data)
         
         if(toastCondition){
-            return alert('it is added previous')
+            return alert('hi this is me')
         } else{
             setCart(newCart)
         }
@@ -31,6 +31,7 @@ const Container = (props) => {
                                     data={data} 
                                     handleBlog={handleBlog} 
                                     handleWatchTime={props.handleWatchTime}
+ 
                                 ></Card>
                             </div>
                         )

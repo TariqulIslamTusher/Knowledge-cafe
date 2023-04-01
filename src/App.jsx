@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import Header from './component/Header/Header'
 import Container from './component/Container/Container'
+import Answer from './component/Answer/Answer'
 
 
 
@@ -27,11 +28,12 @@ function App() {
       }
     }
 
-
   return (
     <div className="App">
       <Header></Header>
       <Container className='grid-cols-9' handleWatchTime={handleWatchTime} watchTime={watchTime} datas={datas} key={datas.map(data => data.id)}></Container>
+      
+      <Answer></Answer>
 
     </div>
   )
