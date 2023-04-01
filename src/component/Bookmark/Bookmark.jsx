@@ -22,11 +22,11 @@ const Bookmark = (props) => {
     }
     return (
         <div className='container'>
-            <div className='bg-blue-100 border-2 border-blue-800 mb-6 p-5 rounded-lg'>
-                <h2 className='text-blue-900 lg:text-2xl font-bold'>Spent time on read : {time}</h2>
+            <div className='bg-blue-100 border-2 border-blue-800 mb-6 p-3 rounded-lg'>
+                <h2 className='text-blue-900 lg:text-2xl font-bold'>Spent time on read : {time} min</h2>
 
             </div>
-            <div id='blog' className='bg-blue-100 border-2 border-blue-800 p-4 rounded-xl'>
+            <div id='blog' className='bg-blue-100 border-2 border-blue-800 p-3 rounded-xl'>
                 <h1 className='lg:text-2xl text-orange-900 bg-blue-100 font-bold'>Bookmarked Blog: <span>{cart.length}</span></h1>
                 {
                     cart.map(singleCart => <li className="md:text-xl p-3 bg-white my-2 rounded-xl">{singleCart.description}</li>)
