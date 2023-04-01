@@ -23,17 +23,17 @@ const Bookmark = (props) => {
     return (
         <div className='container'>
             <div className='bg-blue-100 border-2 border-blue-800 mb-6 p-5 rounded-lg'>
-                <h2 className='text-blue-900 text-2xl font-bold'>Spent time on read : {time}</h2>
+                <h2 className='text-blue-900 lg:text-2xl font-bold'>Spent time on read : {time}</h2>
 
             </div>
             <div id='blog' className='bg-blue-100 border-2 border-blue-800 p-4 rounded-xl'>
-                <h1 className='text-2xl text-orange-900 bg-blue-100 font-bold'>Bookmarked Blog: <span>{cart.length}</span></h1>
+                <h1 className='lg:text-2xl text-orange-900 bg-blue-100 font-bold'>Bookmarked Blog: <span>{cart.length}</span></h1>
                 {
-                    cart.map(singleCart => <li className="text-xl p-3 bg-white my-2 rounded-xl">{singleCart.description}</li>)
+                    cart.map(singleCart => <li className="md:text-xl p-3 bg-white my-2 rounded-xl">{singleCart.description}</li>)
                 }
             </div>
             <div className="text-center">
-                <button onClick={() => reset()} className="mx-auto text-xl bg-red-100 text-red-950 rounded-xl px-5 py-3 btn mt-5 hover:text-white">Reset Bookmarks</button>
+                <button onClick={() => reset()} className="mx-auto text-sm lg:text-lg bg-red-100 text-red-950 rounded-xl p-3 btn mt-5 hover:text-white">Reset Bookmarks</button>
             </div>
 
         </div>

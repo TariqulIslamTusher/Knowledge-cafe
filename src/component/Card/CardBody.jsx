@@ -44,8 +44,8 @@ const CardBody = (props) => {
                 </div>
 
                 <div className="card-actions">
-                    <h1 className='font-bold text-5xl'>{description}</h1>
-                    <a onClick={() => handleWatchTime(reading_time)} className='text-blue-900 mt-3 text-lg btn btn-outline bg-blue-300 font-semibold cursor-pointer active:text-red-900'>Mark as read</a>
+                    <h1 className='font-bold text-xl md:text-2xl lg:text-4xl'>{description}</h1>
+                    <a onClick={() => handleWatchTime(reading_time)} className='text-blue-900 mt-3 md:text-lg btn btn-outline bg-blue-300 font-semibold cursor-pointer active:text-red-900'>Mark as read</a>
                 </div>
             </div>
         </div>

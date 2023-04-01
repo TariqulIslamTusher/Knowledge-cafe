@@ -11,9 +11,9 @@ const Header = () => {
                 <div className='flex justify-end'>
                     <div className="flex-none">
                         <ul className="menu menu-horizontal px-1">
-                            <li><a>Item 1</a></li>
-                            <li><a>Item 2</a></li>
-                            <li><a>Item 3</a></li>
+                            <li><a>Home</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Log in</a></li>
                         </ul>
                     </div>
 

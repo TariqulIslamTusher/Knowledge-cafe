@@ -2,10 +2,10 @@ import React from 'react';
 
 const Answer = () => {
     return (
-        <div className=' mx-auto md:px-48 bg-blue-300'>
-            <div className='container mt-6 pt-6 w-7/12'>
+        <div className='mx-auto md:px-48 bg-gradient-to-b from-slate-200 to-white'>
+            <div className='container mx-auto pt-6 px-2'>
                 <div tabIndex={0} className="bg-emerald-100 text-xl collapse collapse-plus border border-base-300 rounded my-3">
-                    <div className="collapse-title font-medium text-3xl">
+                    <div className="collapse-title font-medium md:text-3xl">
                         Props va state
                     </div>
                     <div className="collapse-content bg-gradient-to-b from-emerald-200 to-white">
@@ -25,9 +25,9 @@ const Answer = () => {
                     </div>
                 </div>
             </div>
-            <div className='container w-7/12'>
+            <div className='container  mx-auto px-2 '>
                 <div tabIndex={0} className="bg-emerald-100 text-xl collapse collapse-plus border border-base-300 rounded my-3">
-                    <div className="collapse-title font-medium text-3xl">
+                    <div className="collapse-title font-medium md:text-3xl">
                         How does useState work?
                     </div>
                     <div className="collapse-content bg-gradient-to-b from-emerald-200 to-white">
@@ -35,9 +35,9 @@ const Answer = () => {
                     </div>
                 </div>
             </div>
-            <div className='container w-7/12'>
+            <div className='container mx-auto px-2 '>
                 <div tabIndex={0} className="bg-emerald-100 text-xl collapse collapse-plus border border-base-300 rounded my-3">
-                    <div className="collapse-title font-medium text-3xl">
+                    <div className="collapse-title font-medium md:text-3xl">
                         Purpose of useEffect other than fetching data
                     </div>
                     <div className="collapse-content bg-gradient-to-b from-emerald-200 to-white">
@@ -45,9 +45,9 @@ const Answer = () => {
                     </div>
                 </div>
             </div>
-            <div className='container w-7/12'>
+            <div className='container mx-auto px-2 '>
                 <div tabIndex={0} className="bg-emerald-100 text-xl collapse collapse-plus border border-base-300 rounded my-3">
-                    <div className="collapse-title font-medium text-3xl">
+                    <div className="collapse-title font-medium md:text-3xl">
                         How does react work?
                     </div>
                     <div className="collapse-content bg-gradient-to-b from-emerald-200 to-white">
