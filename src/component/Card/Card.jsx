@@ -8,9 +8,13 @@ const Card = (props) => {
 
     return (
         <>
-            <div className="card mx-auto gap-5 bg-base-100 shadow-xl">
+            <div className="card mx-auto gap-5 bg-base-100 shadow-xl border-2 border-orange-900 my-5">
                 <figure><img className='w-full max-h-80' src={cover_image} alt="" /></figure>
-                <CardBody data={props.data} handleWatchTime={props.handleWatchTime} handleBlog={props.handleBlog}></CardBody>
+                <CardBody 
+                    data={props.data} 
+                    handleWatchTime={handleWatchTime} 
+                    handleBlog={props.handleBlog}
+                ></CardBody>
             </div>
         </>
     );

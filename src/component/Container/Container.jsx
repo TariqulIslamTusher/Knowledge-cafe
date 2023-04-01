@@ -3,14 +3,21 @@ import Card from '../Card/Card';
 import Bookmark from '../Bookmark/Bookmark';
 
 const Container = (props) => {
-
+    // declaration of state for adding the selected blog in an new array
     const [cart, setCart] = useState([])
-    
+    // function for adding the blogs in an array
     const handleBlog =(data)=>{
         const newCart = [...cart, data]
-        setCart(newCart)
+        
+        
+        const toastCondition = cart.includes(data)
+        
+        if(toastCondition){
+            return alert('it is added previous')
+        } else{
+            setCart(newCart)
+        }
     }
-    // console.log(cart)
 
     return (
         <div className='container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 md:px-32'>
@@ -20,7 +27,11 @@ const Container = (props) => {
                     props.datas.map(data => {
                         return (
                             <div>
-                                <Card data={data} handleBlog={handleBlog} handleWatchTime={props.handleWatchTime}></Card>
+                                <Card 
+                                    data={data} 
+                                    handleBlog={handleBlog} 
+                                    handleWatchTime={props.handleWatchTime}
+                                ></Card>
                             </div>
                         )
                     })
@@ -28,7 +39,11 @@ const Container = (props) => {
             </div>
 
             <div className='md:col-span-1'>
-                <Bookmark watchTime={props.watchTime} cart={cart}></Bookmark>
+                <Bookmark 
+                    watchTime={props.watchTime} 
+                    cart={cart}
+                    setCart={setCart}
+                ></Bookmark>
             </div>
         </div>
 

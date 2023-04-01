@@ -4,6 +4,7 @@ import Header from './component/Header/Header'
 import Container from './component/Container/Container'
 
 
+
 function App() {
   const [datas, setData] = useState([])
   useEffect(() => {
@@ -12,7 +13,7 @@ function App() {
       .then(data => setData(data))
     }, [])
 
-    const [watchTime, setWatchTime] = useState('00')
+    let [watchTime, setWatchTime] = useState('00')
 
     const handleWatchTime =(id) =>{
       const time = JSON.parse(localStorage.getItem('ReadMin'))
