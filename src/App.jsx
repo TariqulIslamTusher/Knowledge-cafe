@@ -6,6 +6,7 @@ import Answer from './component/Answer/Answer'
 
 
 
+
 function App() {
   const [datas, setData] = useState([])
   useEffect(() => {
@@ -32,7 +33,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <Container className='grid-cols-9' handleWatchTime={handleWatchTime} watchTime={watchTime} datas={datas} key={datas.map(data => data.id)}></Container>
-      
+
       <Answer></Answer>
 
     </div>

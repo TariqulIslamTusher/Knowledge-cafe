@@ -6,22 +6,17 @@ const Answer = () => {
             <div className='container mx-auto pt-6 px-2'>
                 <div tabIndex={0} className="bg-emerald-100 text-xl collapse collapse-plus border border-base-300 rounded my-3">
                     <div className="collapse-title font-medium md:text-3xl">
-                        Props va state
+                        Write the difference between Props vs state
                     </div>
                     <div className="collapse-content bg-gradient-to-b from-emerald-200 to-white">
-                        <p>props and State is the core concept of react. it has some feature. i have discus about it bellow</p>
-                        <h1>Props</h1>
-                            <ul className='list-decimal'>
-                                <li>Props is read only.it can't change from user component</li>
-                                <li>Props is unidirectional. it can pass from parent to chields.but cant pass from chields to parent</li>
-                                <li>Props is quite smeller like HTML attribute. But not same</li>
-                                <li>if props is change from parent component the chields component is render again</li>
-                            </ul>
-                        <h1>State</h1>
-                            <ul className='list-decimal'>
-                                <li>State can change on declared component or can change from it's child components</li>
-                                <li>State is changed dynamically</li>
-                            </ul>
+                        <p className='text-2xl mb-2'>props and State is the core concept of react. Some features are describing below:</p>
+                        <h1 className='font-bold'>Props</h1>
+
+                        <p>Props is read only variant,it can't change from user component. Props is unidirectional. it can pass from parent to child neither from child to parent. Parants forward its props as attribute in HTML tags and child recives it as props objects. Props is quite similler like HTML attribute but not same. If props is change from parent component the chields component is render again</p>
+                            
+                        <h1 className='font-bold'>State</h1>
+                        <p>State can change on declared component or can change from it's child components. State is changed dynamically. State is the react version of event listener. JS event listeners working process is done by state in react</p>
+    
                     </div>
                 </div>
             </div>
@@ -31,7 +26,7 @@ const Answer = () => {
                         How does useState work?
                     </div>
                     <div className="collapse-content bg-gradient-to-b from-emerald-200 to-white">
-                        <p>useState is used to manage the state of the component. it is a functional component. it is build in huck of react. when cll useState Function it return a array of contain 2 array elements one is value and the other one is a function. and when calling useState function we can pass a default value.we can't update the value directly. to update the value we need to use the second element of the array which is a function. this function parameter value is updated value.</p>
+                        <p>It is a functional component. useState is used to manage the state of the component. It is build in huck of react. when cal useState Function it return a array of contain 2 array elements one is depends upon the given value of the useState parameters and the other one is a function. and when calling useState function we can pass a default value.we can't update the value directly. to update the value we need to use the second element of the array which is a function. this function parameter value is updated value.</p>
                     </div>
                 </div>
             </div>
@@ -52,11 +47,9 @@ const Answer = () => {
                     </div>
                     <div className="collapse-content bg-gradient-to-b from-emerald-200 to-white">
                         <p>Here's a high-level overview of how React works under the hood:</p>
-                        <ul className='list-decimal'>
-                            <li>React creates a Virtual DOM tree based on the components and their state/props.</li>
-                            <li>React then calculates the most efficient way to update the actual DOM, minimizing the number of changes that need to be made.using Diff Algorithm</li>
-                            <li>Finally, React updates the actual DOM with the changes</li>
-                        </ul>
+
+                        <p>React creates a Virtual DOM tree based on the components and their state/props. React then calculates the most efficient way to update the actual DOM, minimizing the number of changes that need to be made.using Diff Algorithm. Finally, React updates the actual DOM with the changes.  React is not a framework. It is just a library developed by Facebook to solve some problems that we were facing earlier.React is a declarative, efficient, and flexible JavaScript library for building user interfaces. ReactJS is an open-source, component-based front-end library responsible only for the view layer of the application. React is used to create modular user interfaces. It promotes the development of reusable UI components that display dynamic data.</p>
+                     
                     </div>
                 </div>
             </div>

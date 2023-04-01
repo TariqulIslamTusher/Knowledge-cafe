@@ -1,26 +1,11 @@
 import { useEffect, useState } from "react";
 
+
 const CardBody = (props) => {
 
     const { author_image, published_date, author, description, reading_time } = props.data
     const handleWatchTime = props.handleWatchTime
     const handleBlog = props.handleBlog
-
-    
-    
-    // try to toggle the bookmark button
-    // const [cont, setCont] = useState(false)
-    // let fill;
-    // useEffect(()=>{
-    //     setCont(true)
-    //     if(cont== true){
-    //         fill = 'black';
-    //         setCont(false)
-    //     } else{
-    //        setCont(true)
-    //        fill = 'none';
-    //     }
-    // },[setCart])
 
     return (
         <div>
@@ -43,8 +28,14 @@ const CardBody = (props) => {
                     </div>
                 </div>
 
-                <div className="card-actions">
+                <div>
                     <h1 className='font-bold text-xl md:text-2xl lg:text-4xl'>{description}</h1>
+
+                    <div className="text-text-muted my-3 flex gap-4 w-6/12">
+                        <p>#beginners</p>
+                        <p>#programming</p>
+                    </div>
+
                     <a onClick={() => handleWatchTime(reading_time)} className='text-blue-900 mt-3 md:text-lg btn btn-outline bg-blue-300 font-semibold cursor-pointer active:text-red-900'>Mark as read</a>
                 </div>
             </div>
