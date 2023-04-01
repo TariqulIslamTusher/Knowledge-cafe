@@ -3,15 +3,14 @@ import Card from '../Card/Card';
 import Bookmark from '../Bookmark/Bookmark';
 
 const Container = (props) => {
-    let blog;
-    const [blogCount, setBlogCount] = useState([])
+    
+    const [cart, setCart] = useState([])
 
-    const handleBlog = (id)=>{
+    const handleBlog =(data) =>{
+        cart.push(data)
+        setCart(cart)
     }
-    useEffect(()=>{
-        setBlogCount('looooo')
-    },[])
-    console.log(blogCount)
+
     return (
         <div className='container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 md:px-32'>
 
@@ -26,8 +25,9 @@ const Container = (props) => {
                     })
                 }
             </div>
+
             <div className='md:col-span-1'>
-                <Bookmark watchTime={props.watchTime}></Bookmark>
+                <Bookmark watchTime={props.watchTime} cart={cart}></Bookmark>
             </div>
         </div>
 

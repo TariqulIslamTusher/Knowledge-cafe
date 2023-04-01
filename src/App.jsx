@@ -25,7 +25,7 @@ function App() {
         setWatchTime(id)
       }
     }
-    console.log(watchTime)
+
 
   return (
     <div className="App">

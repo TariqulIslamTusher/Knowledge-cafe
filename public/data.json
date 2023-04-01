@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "reading_time" : 14,
         "person": "John Doe",
         "author": "Jane Smith",
         "published_date": "2022-01-01",
@@ -11,6 +12,7 @@
     },
     {
         "id": 2,
+        "reading_time" : 7,
         "person": "Alice Johnson",
         "author": "Bob Brown",
         "published_date": "2022-02-15",
@@ -21,6 +23,7 @@
     },
     {
         "id": 3,
+        "reading_time" : 5,
         "person": "David Lee",
         "author": "Emily Wong",
         "published_date": "2022-03-10",
@@ -31,6 +34,7 @@
     },
     {
         "id": 4,
+        "reading_time" : 10,
         "person": "Sarah Kim",
         "author": "Tom Jackson",
         "published_date": "2022-04-20",
@@ -41,6 +45,7 @@
     },
     {
         "id": 5,
+        "reading_time" : 11,
         "person": "Peter Wong",
         "author": "Olivia Davis",
         "published_date": "2022-05-12",
@@ -51,6 +56,7 @@
     },
     {
         "id": 6,
+        "reading_time" : 9,
         "person": "Lisa Chen",
         "author": "Mike Wilson",
         "published_date": "2022-06-30",
